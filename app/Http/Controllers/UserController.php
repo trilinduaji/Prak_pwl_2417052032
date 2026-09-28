@@ -35,8 +35,7 @@ class UserController extends Controller
         ];
 
         $this->UserModel->create($data);
-
-        return redirect()->to('/user');
+        return redirect()->to('/user')->with('success', 'Data mahasiswa baru berhasil disimpan ke database.');
     }
 
     public function index()
