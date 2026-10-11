@@ -78,3 +78,125 @@ body {
     font-size: 22px;
     color: #222;
 }
+
+
+.action-cell {
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.action-cell .delete-form {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.action-cell .btn-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    box-sizing: border-box;
+    min-width: 90px;
+    height: 36px;
+    padding: 0 14px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.action-cell a.btn-edit {
+    background: #2563eb !important;
+    color: #ffffff !important;
+    border-color: #2563eb !important;
+}
+
+.action-cell a.btn-edit:hover {
+    background: #1d4ed8 !important;
+    border-color: #1d4ed8 !important;
+}
+
+.action-cell button.btn-delete {
+    background: #ffffff !important;
+    color: #dc2626 !important;
+    border-color: #fca5a5 !important;
+}
+
+.action-cell button.btn-delete:hover {
+    background: #dc2626 !important;
+    color: #ffffff !important;
+}
+
+.action-cell .btn-action:focus-visible {
+    outline: 3px solid #93c5fd;
+    outline-offset: 2px;
+}
+
+
+.edit-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background: #eeebff;
+    color: #4834c9;
+    font-size: 25px;
+}
+
+.card.rounded-4 {
+    border-radius: 18px !important;
+}
+
+.form-control,
+.form-select {
+    border-color: #dce1eb;
+    color: #24324b;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #6554d9;
+    box-shadow: 0 0 0 0.2rem rgba(72, 52, 201, 0.12);
+}
+
+.btn-update {
+    background: #4834c9;
+    color: #ffffff;
+    border: 1px solid #4834c9;
+    font-weight: 600;
+    transition: background-color 0.2s ease,
+                transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.btn-update:hover {
+    background: #3826ad;
+    border-color: #3826ad;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(72, 52, 201, 0.2);
+}
+
+.btn-light {
+    color: #475569;
+    font-weight: 500;
+}
+
+.btn-light:hover {
+    background: #eef0f6;
+}
+
+@media (max-width: 576px) {
+    .card-body.p-4 {
+        padding: 1.25rem !important;
+    }
+}
